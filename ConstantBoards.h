@@ -45,7 +45,7 @@ namespace Boards
 	};
 
 	template<> 
-	struct Info<Consts::BOARD_TYPE_LIGHT_FRONT>
+	struct Info<Consts::BOARD_TYPE_LIGHT>
 	{
 		static constexpr const char *name = "LightECU";
 		static constexpr const char *desc = "Light board control board for Pixel project";
@@ -53,6 +53,7 @@ namespace Boards
 		using features_t = Consts::features_light_t;
 	};
 
+/*
 	template<> 
 	struct Info<Consts::BOARD_TYPE_LIGHT_BACK>
 	{
@@ -61,6 +62,7 @@ namespace Boards
 		static constexpr const char *git = "https://github.com/starfactorypixel/SlaveECU_Light";
 		using features_t = Consts::features_light_t;
 	};
+*/
 
 	template<> 
 	struct Info<Consts::BOARD_TYPE_STEERING_RACK>
