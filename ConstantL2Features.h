@@ -65,5 +65,13 @@ namespace Consts
 		uint8_t _padding[7];
 	};
 	static_assert(sizeof(features_light_t) == features_length, "Wrong struct length");
+	
+	// Вожможности платы DoorECU
+	struct __attribute__((packed)) features_door_t
+	{
+		uint8_t _padding[7];
+	};
+	static_assert(sizeof(features_door_t) == features_length, "Wrong struct length");
+	
 
 }
